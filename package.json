@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "transpiling_python_to_python_talk",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "help": "mdx-deck"
+  },
+  "devDependencies": {
+    "mdx-deck": "^1.10.0",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "prism-react-renderer": "^0.1.6"
+  }
+}
