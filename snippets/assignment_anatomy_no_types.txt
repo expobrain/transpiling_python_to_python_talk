@@ -1,0 +1,9 @@
+# Transformed code
+answer = 42
+
+
+# AST
+Assign(
+    targets=[Name(id='answer')],
+    value=Num(n=42)
+)

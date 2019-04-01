@@ -3,10 +3,12 @@
   "name": "transpiling_python_to_python_talk",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
-    "help": "mdx-deck"
+    "build:assets": "cp -r assets dist/",
+    "build": "mdx-deck build deck.mdx --no-html && npm run build:assets",
+    "image:min": "imagemin --out-dir assets assets"
   },
   "devDependencies": {
+    "imagemin-cli": "^4.0.1",
     "mdx-deck": "^1.10.0",
     "mdx-deck-code-surfer": "^0.5.5",
     "raw-loader": "^2.0.0"

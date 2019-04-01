@@ -1,0 +1,6 @@
+Python 3.x                  Python 2.7
+------------------          ------------------
+
+answer: int = 42            =>  answer = 42
+greeting: str = "Hello"     =>  greeting = "Hello"
+user: User = User("John)    =>  user = User("John")

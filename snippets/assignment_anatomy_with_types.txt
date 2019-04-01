@@ -1,0 +1,10 @@
+# Original code
+answer: int = 42
+
+
+# AST
+AnnAssign(
+    target=Name(id='answer'),
+    annotation=Name(id='int'),
+    value=Num(n=42)
+)
