@@ -11,7 +11,7 @@
     "imagemin-cli": "^4.0.1",
     "mdx-deck": "^1.10.0",
     "mdx-deck-code-surfer": "^0.5.5",
-    "raw-loader": "^2.0.0"
+    "raw-loader": "^4.0.2"
   },
   "dependencies": {
     "prism-react-renderer": "^0.1.6"
