@@ -1,8 +1,25 @@
 [tool.black]
-target-version = ["py36"]
+target-version = ["py39"]
 line-length = 80
 exclude = '''
 /(
-    \.git|node_modules
+    \.git|node_modules|\.venv
 )/
 '''
+
+[tool.poetry]
+name = "transpiling_python_to_python_talk"
+version = "0.1.0"
+description = ""
+authors = ["Daniele Esposti"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+astor = "^0.8.1"
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
