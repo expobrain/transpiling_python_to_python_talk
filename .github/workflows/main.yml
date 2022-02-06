@@ -1,0 +1,20 @@
+name: Unit testing, formatting & linting
+on: [push]
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+      - name: Cache multiple Pips
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/pip
+          key: ${{ runner.os }}-3.9-${{ hashFiles('**/poetry.lock') }}
+      - run: pip install poetry
+      - run: poetry install
+      - run: poetry run pytest -x
